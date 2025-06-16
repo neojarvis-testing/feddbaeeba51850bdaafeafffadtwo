@@ -1,0 +1,196 @@
+/* Style for the entire ProductsList component */
+.ProductsList {
+    margin: 30px;
+    justify-content: space-between;
+}
+
+.EmployeesList {
+    width: 95%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+  }
+
+/* Style for the table */
+ .searchBar {
+    margin: 10px 0;
+    margin-left: 76%;
+    width: 24%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  th {
+    background-color: rgb(89, 111, 134);
+    color: #fff;
+  }
+  
+  .sortButtons {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Style for the popup */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* semi-transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+}
+
+/* .searchBar {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 20px;
+} */
+
+.searchBar:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Blur effect for the background when the popup is open */
+.popup-open {
+    filter: blur(6px);
+}
+
+/* CSS for Delete Popup */
+.delete-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f2f2f2;
+    border: 1px solid black;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: center;
+    z-index: 2; /* Above the overlay */
+    max-width: 500px;
+    width: 90%;
+}
+
+.delete-popup p {
+    margin: 0;
+    padding: 40px;
+    font-size: 18px;
+    color: #333;
+}
+
+.delete-popup button {
+    background-color: #ff6961;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.delete-popup button:hover {
+    background-color: #e60000; /* A slightly darker shade of red */
+}
+
+.delete-popup button:last-child {
+    background-color: #ccc; /* Gray color for Cancel button */
+}
+
+.delete-popup button:last-child:hover {
+    background-color: #999; /* A slightly darker shade of gray for Cancel button on hover */
+}
+
+.styledbutton{
+    float: right;
+    margin: 5px;
+    background-color: rgb(89, 111, 134);
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.styledbutton:hover {
+    background-color: rgb(89, 111, 134);
+}
+
+.sortButtons{
+    background-color: white ;
+    padding: 3px;
+    float: left;
+    margin-top: 1px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sortButtons:hover {
+    background-color: #f2f2f2;
+}
+
+.button-container{
+    padding: 33px;
+}
